@@ -1,0 +1,106 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                   AUTO LINK OPENER - ANDROID APP                     ║
+║              Aplikasi Buka Link Otomatis Terjadwal                   ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📦 FILE YANG TERSEDIA UNTUK DOWNLOAD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. AutoLinkOpener.zip (20 KB)
+   📍 Lokasi: /vercel/sandbox/AutoLinkOpener.zip
+   📝 Isi: Source code lengkap aplikasi Android
+   
+2. CARA_DOWNLOAD_DAN_BUILD.md (4.5 KB)
+   📍 Lokasi: /vercel/sandbox/CARA_DOWNLOAD_DAN_BUILD.md
+   📝 Isi: Panduan lengkap download dan build APK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CARA CEPAT MENDAPATKAN APK:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LANGKAH 1: Download Source Code
+   → File: AutoLinkOpener.zip
+   → Lokasi: /vercel/sandbox/AutoLinkOpener.zip
+
+LANGKAH 2: Extract ZIP
+   → unzip AutoLinkOpener.zip
+
+LANGKAH 3: Buka di Android Studio
+   → File → Open → Pilih folder AutoLinkOpener
+   → Tunggu Gradle sync selesai
+
+LANGKAH 4: Build APK
+   → Build → Build Bundle(s) / APK(s) → Build APK(s)
+   → Atau via terminal: ./gradlew assembleDebug
+
+LANGKAH 5: Install di HP Android
+   → APK ada di: app/build/outputs/apk/debug/app-debug.apk
+   → Transfer ke HP dan install
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ FITUR APLIKASI:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Tambah link dengan jadwal waktu (jam & menit)
+✅ Aktifkan/nonaktifkan jadwal individual
+✅ Hapus jadwal yang tidak diperlukan
+✅ Link otomatis terbuka di browser pada waktu terjadwal
+✅ Jadwal berulang setiap hari
+✅ UI modern dengan Material Design 3
+✅ Mudah digunakan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 YANG DIBUTUHKAN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Untuk Build APK:
+   • Android Studio (download dari developer.android.com/studio)
+   • JDK 11+ (biasanya sudah include dengan Android Studio)
+   • Android SDK API Level 34
+
+Untuk Install di HP:
+   • Android 7.0 (Nougat) atau lebih tinggi
+   • Aktifkan "Install from Unknown Sources"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 CATATAN PENTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  Lingkungan sandbox ini tidak memiliki Java/Android SDK, sehingga
+    APK tidak bisa di-build langsung di sini.
+
+✅  Source code LENGKAP sudah tersedia dalam AutoLinkOpener.zip
+
+✅  Anda perlu build APK di komputer dengan Android Studio
+
+✅  Proses build sangat mudah, ikuti panduan di 
+    CARA_DOWNLOAD_DAN_BUILD.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 DOKUMENTASI LENGKAP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• CARA_DOWNLOAD_DAN_BUILD.md - Panduan lengkap
+• AutoLinkOpener/README.md - Dokumentasi project
+• Source code dengan komentar jelas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 CARA MENGGUNAKAN APLIKASI SETELAH INSTALL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Buka aplikasi "Auto Link Opener"
+2. Tap tombol + untuk tambah link
+3. Masukkan URL (contoh: https://google.com)
+4. Masukkan jam (0-23) dan menit (0-59)
+5. Tap "Tambah"
+6. Link akan otomatis terbuka pada waktu yang dijadwalkan!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Selamat menggunakan! 🚀
