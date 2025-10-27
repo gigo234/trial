@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Aesthetic Wallpaper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: 'Courier New', monospace;
+            background: #0a0e27;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1729 100%);
+        }
+
+        .grid-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+            perspective: 1000px;
+            transform: rotateX(60deg) translateZ(-100px);
+        }
+
+        @keyframes gridMove {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(0, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(50px);
+                opacity: 0;
+            }
+        }
+
+        .circuit-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        .circuit-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, #00ffff, transparent);
+            height: 2px;
+            animation: circuitFlow 8s linear infinite;
+        }
+
+        @keyframes circuitFlow {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+        }
+
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .tech-circle {
+            width: 300px;
+            height: 300px;
+            border: 3px solid rgba(0, 255, 255, 0.5);
+            border-radius: 50%;
+            position: relative;
+            animation: rotate 20s linear infinite;
+            margin: 0 auto 30px;
+        }
+
+        .tech-circle::before,
+        .tech-circle::after {
+            content: '';
+            position: absolute;
+            border: 2px solid rgba(255, 0, 255, 0.4);
+            border-radius: 50%;
+        }
+
+        .tech-circle::before {
+            width: 250px;
+            height: 250px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 15s linear infinite reverse;
+        }
+
+        .tech-circle::after {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .tech-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: #00ffff;
+            text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        .tech-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+            letter-spacing: 5px;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+            }
+            50% {
+                text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+            }
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #ff00ff;
+            margin-top: 20px;
+            letter-spacing: 3px;
+            opacity: 0.8;
+        }
+
+        .code-rain {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .code-column {
+            position: absolute;
+            top: -100%;
+            font-size: 14px;
+            color: #00ff00;
+            opacity: 0.3;
+            animation: rain 10s linear infinite;
+            font-family: 'Courier New', monospace;
+        }
+
+        @keyframes rain {
+            0% {
+                top: -100%;
+            }
+            100% {
+                top: 100%;
+            }
+        }
+
+        .hexagon {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgba(255, 0, 255, 0.3);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: hexFloat 8s ease-in-out infinite;
+        }
+
+        @keyframes hexFloat {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+            }
+        }
+
+        .scan-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ffff, transparent);
+            animation: scan 4s linear infinite;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: 100%;
+            }
+        }
+
+        .corner-decoration {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #00ffff;
+        }
+
+        .corner-decoration.top-left {
+            top: 30px;
+            left: 30px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner-decoration.top-right {
+            top: 30px;
+            right: 30px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .corner-decoration.bottom-left {
+            bottom: 30px;
+            left: 30px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .corner-decoration.bottom-right {
+            bottom: 30px;
+            right: 30px;
+            border-left: none;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-background"></div>
+        
+        <div class="particles" id="particles"></div>
+        
+        <div class="circuit-lines" id="circuitLines"></div>
+        
+        <div class="code-rain" id="codeRain"></div>
+        
+        <div class="scan-line"></div>
+        
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+        
+        <div class="center-content">
+            <div class="tech-circle">
+                <div class="tech-icon">⚡</div>
+            </div>
+            <div class="tech-text">TECHNOLOGY</div>
+            <div class="subtitle">FUTURE IS NOW</div>
+        </div>
+    </div>
+
+    <script>
+        // Create particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.width = Math.random() * 4 + 2 + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = Math.random() * 10 + 10 + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Create circuit lines
+        const circuitLinesContainer = document.getElementById('circuitLines');
+        for (let i = 0; i < 10; i++) {
+            const line = document.createElement('div');
+            line.className = 'circuit-line';
+            line.style.top = Math.random() * 100 + '%';
+            line.style.width = Math.random() * 300 + 200 + 'px';
+            line.style.animationDelay = Math.random() * 8 + 's';
+            line.style.animationDuration = Math.random() * 5 + 5 + 's';
+            circuitLinesContainer.appendChild(line);
+        }
+
+        // Create code rain
+        const codeRainContainer = document.getElementById('codeRain');
+        const codeChars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        for (let i = 0; i < 30; i++) {
+            const column = document.createElement('div');
+            column.className = 'code-column';
+            column.style.left = Math.random() * 100 + '%';
+            column.style.animationDelay = Math.random() * 10 + 's';
+            column.style.animationDuration = Math.random() * 5 + 8 + 's';
+            
+            let text = '';
+            for (let j = 0; j < 20; j++) {
+                text += codeChars[Math.floor(Math.random() * codeChars.length)] + '<br>';
+            }
+            column.innerHTML = text;
+            codeRainContainer.appendChild(column);
+        }
+
+        // Create floating hexagons
+        for (let i = 0; i < 5; i++) {
+            const hexagon = document.createElement('div');
+            hexagon.className = 'hexagon';
+            hexagon.style.left = Math.random() * 80 + 10 + '%';
+            hexagon.style.top = Math.random() * 80 + 10 + '%';
+            hexagon.style.animationDelay = Math.random() * 8 + 's';
+            hexagon.style.animationDuration = Math.random() * 5 + 6 + 's';
+            document.querySelector('.container').appendChild(hexagon);
+        }
+    </script>
+</body>
+</html>
